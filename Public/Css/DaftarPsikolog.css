@@ -1,0 +1,133 @@
+.center {
+    display: block;        /* Mengubah gambar menjadi elemen block */
+    margin-left: auto;     /* Margin otomatis untuk menempatkan gambar di tengah */
+    margin-right: auto;
+    border-radius: 50%;
+    width: 150px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textcontainer {
+    justify-content: center; /* Elemen <p> berada di tengah secara horizontal */
+    align-items: center;     /* Bisa digunakan untuk vertikal alignment */
+    padding-left: 300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.judul2 {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center; /* Elemen <p> berada di tengah secara horizontal */
+    align-items: center;     /* Bisa digunakan untuk vertikal alignment */
+    padding-left: 300px;
+}
+
+.container {
+    display: flex;            /* Mengatur elemen di dalamnya agar satu baris */
+    align-items: center;      /* Vertikal alignment, agar <p> sejajar dengan <img> */
+}
+
+.iconic {
+    width: 50px;              /* Sesuaikan lebar gambar */
+    height: auto;             /* Menjaga rasio gambar */
+    margin-right: 10px;       /* Memberi jarak antara gambar dan teks */
+    padding-left: 280px;
+}
+
+p {
+    margin: 0;                /* Menghilangkan margin default dari <p> */
+}
+
+.footer {
+    background: linear-gradient(180deg, #00204b 20%, #f7cdd0 100%);
+    padding: 20px;
+    border-top: 2px solid #e0e0e0;
+    width: 100%;              /* Lebar penuh layar */
+    position: fixed;           /* Agar footer selalu berada di bawah */
+    bottom: 0;                 /* Menempel di bagian bawah halaman */
+    left: 0;                   /* Menempel di bagian kiri halaman */
+    text-align: center;        /* Pusatkan konten di dalam footer */
+    z-index: 1000;             /* Pastikan footer berada di atas elemen lain */
+}
+
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+
+.footer-content .social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content .social-icons a {
+    margin: 0 10px;
+}
+
+.footer-content .social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footer .about-me,
+.footer .company,
+.footer .sm,
+.footer .profesional,
+.footer .tos {
+    color: white;
+    flex: 1;
+    min-width: 150px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+.about-me span,
+.company span,
+.sm span,
+.tos span,
+.profesional span {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profesional button {
+    background-color: pink;
+    color: #2f3485;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.about-me p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 2px 0;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
